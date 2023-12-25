@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FruitiCart: Créer un compte</title>
+    {% load static %}
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #8CC084;
+            color: #333;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+            color: #333;
+        }
+
+        .register-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-label {
+            margin-left: 8px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #8CC084;
+            color: #333;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>FruitiCart: Créer un compte</h1>
+        <p>Créez un nouveau compte pour profiter de nos offres exclusives.</p>
+    </header>
+
+    <section>
+        <div class="register-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="receive-emails" name="receive-emails">
+                <label class="checkbox-label" for="receive-emails">Receive promotional emails</label>
+            </div>
+
+            <button onclick="register()">Create Account</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 FruitiCart: Fresh Produce at Your Fingertips</p>
+    </footer>
+
+    <script>
+        function register() {
+            // Add registration logic here (e.g., send data to the server)
+            alert("Account created successfully!"); // This is an example, replace it with real logic
+        }
+    </script>
+</body>
+
+</html>
